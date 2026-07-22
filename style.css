@@ -1,1 +1,347 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/* ===========================
+   Reset
+=========================== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#070707;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ffb400;
+    border-radius:20px;
+}
+
+/* ===========================
+   Navbar
+=========================== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:999;
+    backdrop-filter:blur(15px);
+    background:rgba(0,0,0,.35);
+}
+
+.navbar{
+
+    max-width:1300px;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+
+}
+
+.logo{
+
+    font-size:32px;
+    font-weight:700;
+    color:#ffb400;
+    letter-spacing:2px;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffb400;
+
+}
+
+.buttons{
+
+display:flex;
+gap:15px;
+
+}
+
+.login{
+
+padding:10px 24px;
+border:1px solid white;
+background:transparent;
+color:white;
+cursor:pointer;
+border-radius:30px;
+
+}
+
+.download{
+
+padding:10px 28px;
+
+background:#ffb400;
+
+color:black;
+
+border:none;
+
+font-weight:bold;
+
+border-radius:30px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.download:hover{
+
+transform:scale(1.08);
+
+}
+
+/* ===========================
+Hero
+=========================== */
+
+.hero{
+
+height:100vh;
+
+background:url("https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=1600&auto=format&fit=crop")
+center center/cover no-repeat;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+padding:100px;
+
+}
+
+.overlay{
+
+position:absolute;
+
+inset:0;
+
+background:linear-gradient(to right,#000 15%,rgba(0,0,0,.3));
+
+}
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+max-width:650px;
+
+}
+
+.hero h1{
+
+font-size:72px;
+
+line-height:1.1;
+
+font-weight:800;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:20px;
+
+color:#ddd;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.hero-btns{
+
+display:flex;
+
+gap:20px;
+
+}
+
+.play{
+
+background:#ffb400;
+
+color:black;
+
+padding:15px 40px;
+
+border:none;
+
+font-size:18px;
+
+font-weight:700;
+
+cursor:pointer;
+
+border-radius:50px;
+
+transition:.3s;
+
+}
+
+.play:hover{
+
+transform:translateY(-5px);
+
+}
+
+.watch{
+
+background:transparent;
+
+color:white;
+
+padding:15px 35px;
+
+border:2px solid white;
+
+cursor:pointer;
+
+font-size:18px;
+
+border-radius:50px;
+
+}
+
+.watch:hover{
+
+background:white;
+
+color:black;
+
+}
+
+/* ===========================
+News
+=========================== */
+
+.news{
+
+padding:100px 8%;
+
+background:#111;
+
+}
+
+.news h2{
+
+text-align:center;
+
+font-size:48px;
+
+margin-bottom:60px;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:#1b1b1b;
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+}
+
+.card h3{
+
+padding:20px;
+
+font-size:26px;
+
+}
+
+.card p{
+
+padding:0 20px 25px;
+
+color:#bbb;
+
+line-height:1.7;
+
+}
